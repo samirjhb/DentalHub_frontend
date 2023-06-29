@@ -13,7 +13,7 @@ export default function Login() {
   if(auth.isAuthenticated){
     return <Navigate to="/dashboard"/>
   }
-  
+
   return (
     <DefaultLayout>
       <form className="form">
