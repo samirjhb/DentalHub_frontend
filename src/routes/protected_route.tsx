@@ -1,9 +1,11 @@
 import { Outlet, Navigate } from "react-router-dom";
 import { useState } from "react";
+import { useAuth } from "../auth/auth_provider";
 
-export default function ProtectedRpute()
+export default function ProtectedRoute()
 {
-  const [isAuth, setIsAuth ] = useState(false);
+  const auth = useAuth();
 
-  return isAuth? <Outlet/> : <Navigate to= '/'/>;
+  return auth.isAuthenticated? <Outlet/> : <Navigate to= '/login'/>;
 }
+
