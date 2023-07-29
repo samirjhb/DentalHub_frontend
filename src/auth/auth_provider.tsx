@@ -10,7 +10,7 @@ const AuthContext = createContext({
 
  //! once pj being upgraded and backend implemented switch useState value to false in order to do ProtectedRoute work effectly
 export function AuthProvider({ children }: AuthProviderProps) {
-  const [isAuthenticated, setIsAuthenticated] = useState(true);
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
   
   return (
     <AuthContext.Provider value={{ isAuthenticated }}>

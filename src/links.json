@@ -1,0 +1,16 @@
+{
+  "links": [
+      {
+          "label": "Home",
+          "href": "/blank_page"
+      },
+      {
+          "label": "About",
+          "href": "/login"
+      },
+      {
+          "label": "Contact",
+          "href": "/sign_up"
+      }
+  ]
+}
